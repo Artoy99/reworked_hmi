@@ -31,3 +31,8 @@
 .home-button:hover{
     background-color: RoyalBlue;
 }
+
+.home-logo{
+    display: flex;
+    width: 80%;
+}
