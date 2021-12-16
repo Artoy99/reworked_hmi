@@ -1,0 +1,33 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('../../assets/fond.jpg');
+    background-size: 100%;
+}
+
+.home-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 80px;
+    width: 150px;
+
+
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    margin: 50px;
+}
+
+.home-button:hover{
+    background-color: RoyalBlue;
+}
