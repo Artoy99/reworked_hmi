@@ -1,0 +1,57 @@
+.openbtn-container{
+    --icon_color: rgb(0, 204, 255);
+    --icon_height: 6px;
+    --icon_width: 40px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid rgb(81, 255, 0);
+
+    background-color: lightseagreen; */
+}
+
+.openbtn-burger{
+    width: var(--icon_width);
+    height: var(--icon_height);
+    background: var(--icon_color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .openbtn-burger::before,
+  .openbtn-burger::after {
+    content: '';
+    position: absolute;
+    width: var(--icon_width);
+    height: var(--icon_height);
+    background: var(--icon_color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .openbtn-burger::before {
+    transform: translateY(-16px);
+  }
+  .openbtn-burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .openbtn-container.open .openbtn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .openbtn-container.open .openbtn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .openbtn-container.open .openbtn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
