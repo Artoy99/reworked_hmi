@@ -2,6 +2,7 @@
     --icon_color: rgb(0, 204, 255);
     --icon_height: 6px;
     --icon_width: 40px;
+    --icon_transition_time: .5s;
 
     position: absolute;
     top: 20px;
@@ -24,7 +25,7 @@
     background: var(--icon_color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
+    transition: all var(--icon_transition_time) ease-in-out;
   }
   .openbtn-burger::before,
   .openbtn-burger::after {
@@ -35,7 +36,7 @@
     background: var(--icon_color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .5s ease-in-out;
+    transition: all var(--icon_transition_time) ease-in-out;
   }
   .openbtn-burger::before {
     transform: translateY(-16px);

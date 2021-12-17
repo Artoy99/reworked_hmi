@@ -15,7 +15,7 @@ function Gcs() {
     <>
         <div className="gcs-container">
             <Sidebar isActive = {isActive} />
-            <div onClick={toggleSidebar}>
+            <div className="open-btn" onClick={toggleSidebar}>
               <OpenBtn open={isActive} />
             </div>
             <div className="">
