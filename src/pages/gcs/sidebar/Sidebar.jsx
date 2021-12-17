@@ -9,6 +9,15 @@ function Sidebar({isActive}) {
         <div className="sidebar-item">
           item
         </div>
+        <div className="sidebar-item">
+          item
+        </div>
+        <div className="sidebar-item">
+          item
+        </div>
+        <div className="sidebar-item">
+          item
+        </div>
       </div>
     </>
   );
