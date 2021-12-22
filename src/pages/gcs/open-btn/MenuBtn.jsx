@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './OpenBtn.css';
+import './MenuBtn.css';
 
-function OpenBtn({open}) {
+function MenuBtn({open}) {
   return (
     <>
-      <div className={open ? "openbtn-container open" : "openbtn-container"}>
-        <div className="openbtn-burger"/>
+      <div className={open ? "menubtn-container open" : "menubtn-container"}>
+        <div className="menubtn-burger"/>
       </div>
        {/* <div className="openbtn-container">
         <div className={open ? "openbtn-burger open" : "openbtn-burger"}/>
@@ -15,4 +15,4 @@ function OpenBtn({open}) {
   );
 }
 
-export default OpenBtn;
+export default MenuBtn;

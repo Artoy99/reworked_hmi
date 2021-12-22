@@ -1,4 +1,4 @@
-.openbtn-container{
+.menubtn-container{
     --icon_color: rgb(0, 204, 255);
     --icon_height: 6px;
     --icon_width: 40px;
@@ -19,7 +19,7 @@
     background-color: lightseagreen; */
 }
 
-.openbtn-burger{
+.menubtn-burger{
     width: var(--icon_width);
     height: var(--icon_height);
     background: var(--icon_color);
@@ -27,8 +27,8 @@
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all var(--icon_transition_time) ease-in-out;
   }
-  .openbtn-burger::before,
-  .openbtn-burger::after {
+  .menubtn-burger::before,
+  .menubtn-burger::after {
     content: '';
     position: absolute;
     width: var(--icon_width);
@@ -38,21 +38,21 @@
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all var(--icon_transition_time) ease-in-out;
   }
-  .openbtn-burger::before {
+  .menubtn-burger::before {
     transform: translateY(-16px);
   }
-  .openbtn-burger::after {
+  .menubtn-burger::after {
     transform: translateY(16px);
   }
   /* ANIMATION */
-  .openbtn-container.open .openbtn-burger {
+  .menubtn-container.open .menubtn-burger {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
-  .openbtn-container.open .openbtn-burger::before {
+  .menubtn-container.open .menubtn-burger::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
-  .openbtn-container.open .openbtn-burger::after {
+  .menubtn-container.open .menubtn-burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
